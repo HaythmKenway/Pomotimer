@@ -1,19 +1,29 @@
 # PomoTimer
 
-A TUI-based Pomodoro timer with fullscreen mode and activity logging.
+A high-performance, TUI-based Pomodoro timer built with Go and the Bubble Tea framework. Designed for users who live in the terminal and want a distraction-free, fullscreen productivity tool.
 
-## Features
-- Fullscreen interface (AltScreen mode)
-- Standard Pomodoro intervals (Focus, Short Break, Long Break)
-- Activity logging to `~/user.log`
-- Desktop notifications
-- Today's statistics
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
-## Keybindings
-- `q`: Quit
-- `n`: Next step
-- `r`: Reset timer
-- `h`: View history
-- `c`: Configuration
-- `i`: Log a thought
-- `s`: Productivity score (via Ollama)
+## 🚀 Features
+- **Fullscreen TUI**: Immersive interface using the Alternate Screen Buffer (no flickering).
+- **Persistent Logging**: Automatically saves session data to a local SQLite database (`tracker.db`).
+- **Activity Tracking**: Prompted recording of "What did you do?" at the end of focus sessions.
+- **Thought Log**: Quickly capture notes into `~/user.log` without leaving the timer.
+- **Desktop Integration**: Native Linux notifications via `notify-send`.
+- **AI Scoring**: Optional productivity scoring via local [Ollama](https://ollama.com/) integration.
+
+## 🛠️ Getting Started
+Check out the [Installation Guide](docs/installation.md) for detailed setup instructions.
+
+```bash
+# Quick Start
+go run .
+```
+
+## 📖 Documentation
+- [Configuration](docs/configuration.md)
+- [Usage & Keybindings](docs/usage.md)
+- [Installation](docs/installation.md)
+
+## 📜 License
+MIT
